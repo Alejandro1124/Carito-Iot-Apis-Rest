@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Carrito Iot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+    <div class="input-container">
+        <label for="name">Escribe tu nombre:</label>
+        <input type="text" id="name" placeholder="Tu nombre">
+    </div>
+
+    <div class="controller">
+        <button id="up-left">↖</button>
+        <button id="up">↑</button>
+        <button id="up-right">↗</button>
+        <button id="left">←</button>
+        <button id="stop">◼</button>
+        <button id="right">→</button>
+        <button id="down-left">↙</button>
+        <button id="down">↓</button>
+        <button id="down-right">↘</button>
+    </div>
+    
+    <script type="module"src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha256.js"></script>
+
+</body>
+</html>
